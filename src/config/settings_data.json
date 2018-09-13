@@ -31,7 +31,7 @@
     "social_snapchat_link": "",
     "social_youtube_link": "",
     "social_vimeo_link": "",
-    "favicon": "shopify://shop_images/Odyssei_Homepage_S1.png",
+    "favicon": "shopify:\/\/shop_images\/Odyssei_Homepage_S1.png",
     "checkout_header_image": "",
     "checkout_logo_image": "",
     "checkout_logo_position": "left",
@@ -51,7 +51,7 @@
         "type": "header",
         "settings": {
           "align_logo": "left",
-          "logo": "shopify://shop_images/Odyssei_Header_logo.png",
+          "logo": "shopify:\/\/shop_images\/Odyssei_Header_logo.png",
           "logo_max_width": 195,
           "main_linklist": "main-menu",
           "message": false,
@@ -68,7 +68,7 @@
           "image": "",
           "alignment": "center",
           "title": "Image with text overlay",
-          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.</p>",
+          "text": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
           "hero_size": "medium",
           "text_size": "large",
           "button_label": "",
@@ -92,7 +92,7 @@
           "footer_linklist": "footer",
           "footer_linklist_two": "",
           "footer_newsletter_enable": false,
-          "footer_newsletter_subheading": "<p>A short sentence describing what someone will receive by subscribing</p>",
+          "footer_newsletter_subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
           "show_payment_icons": false
         }
       },
@@ -150,7 +150,7 @@
         "type": "odyssei-newsletter",
         "settings": {
           "section_title": "Subscribe to our newsletter",
-          "subheading": "<p>A short sentence describing what someone will receive by subscribing</p>",
+          "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
           "show_background": false
         }
       }
