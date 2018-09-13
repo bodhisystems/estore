@@ -1,18 +1,18 @@
 {
-  "name": "skeleton-theme",
+  "name": "odyssei",
   "version": "1.0.0-alpha.1",
   "private": true,
-  "author": "Shopify Inc.",
-  "description": "A barebones, Slate compatible, starting point for developing Shopify themes.",
+  "author": "Suabsh Maharjan",
+  "description": "Online Clothing Store",
   "keywords": [
     "shopify",
     "theme"
   ],
-  "bugs": "https://github.com/Shopify/skeleton-theme/issues",
+  "bugs": "https://github.com/bodhisystems/estore/issues",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Shopify/skeleton-theme.git"
+    "url": "https://github.com/bodhisystems/estore.git"
   },
   "devDependencies": {
     "@shopify/slate-tools": ">=1.0.0-beta.5"
