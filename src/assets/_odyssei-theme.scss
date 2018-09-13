@@ -115,3 +115,25 @@ a.site-nav__link.site-nav__link--main:before {
 a.site-nav__link.site-nav__link--main:after {
   bottom: -15px;
 }
+
+#shopify-section-custom-content {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+#shopify-section-custom-content .custom__item {
+  width: 110px;
+}
+
+.floating-season {
+  position: relative;
+}
+#shopify-section-logo-bar {
+  position: absolute;
+  top: -110px;
+}
+
+#shopify-section-collection {
+  background: #fff;
+}

@@ -1,6 +1,16 @@
 {{ '_odyssei-theme.scss' | asset_url | stylesheet_tag }}
 {% assign page = pages.store-open-teaser %}
 
+
+{% section 'hero' %}
+{% section 'custom-content' %}
+
+<div class="floating-season">
+{% section 'logo-bar' %}
+</div>
+
  {{page.content}}
 
-{% section 'odyssei-newsletter' %}
+{% section 'collection' %}
+
+{% section 'image-bar' %}
