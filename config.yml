@@ -21,7 +21,7 @@ development:
   ignore_files:
     - "*.gif"
     - "*.jpg"
-    # - config/settings_data.json
+    - config/settings_data.json
 production:
   password: c912420eee9390f91cb896854699b596
   theme_id: "25455493177"
