@@ -15,13 +15,14 @@
     "url": "https://github.com/bodhisystems/estore.git"
   },
   "devDependencies": {
-    "@shopify/slate-tools": ">=1.0.0-beta.5"
+    "@shopify/slate-tools": "0.14.0"
   },
   "scripts": {
-    "start": "slate-tools start",
-    "watch": "slate-tools start --skipFirstDeploy",
-    "build": "slate-tools build",
-    "deploy": "slate-tools build && slate-tools deploy",
-    "zip": "slate-tools build && slate-tools zip"
+    "watch": "slate watch",
+    "start:dev": "slate start --env development",
+    "start:prod": "slate start --env production",
+    "deploy:dev": "slate deploy --env development",
+    "deploy:prod": "slate deploy --env production",
+    "build": "slate build"
   }
 }
