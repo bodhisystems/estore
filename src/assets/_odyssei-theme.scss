@@ -1,3 +1,4 @@
+
 .responsive {
     width: 100%;
     height: auto;
@@ -136,4 +137,57 @@ a.site-nav__link.site-nav__link--main:after {
 
 #shopify-section-collection {
   background: #fff;
+}
+
+dl.price, .grid-view-item__title {
+    text-align: center;
+    display: block;
+    color:  #e4e0c8;
+}
+
+dl.price dd {
+  margin: 0;
+}
+
+.price-item {
+  color: #e4e0c8;
+}
+
+
+.template-index .main-content, .template-index .index-section {
+  padding-top: 0;
+}
+
+.site-header__logo-image img {
+  min-width: 120px;
+  position: absolute;
+  bottom: -20px;
+}
+
+.site-nav {
+  position: absolute;
+  bottom: -45px;
+  right: 0;
+}
+
+.site-nav a {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.template-index .site-nav li {
+  position: relative;
+}
+.template-index .site-nav li:first-child a:before {
+  content: "|";
+  position: absolute;
+  top: -25px;
+  left: 46%;
+}
+
+.template-index .site-nav li:first-child a:after {
+  content: "|";
+  position: absolute;
+  bottom: -20px;
+  left: 46%;
 }
