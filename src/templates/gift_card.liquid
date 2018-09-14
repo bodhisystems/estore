@@ -1,3 +1,4 @@
+{{ '_odyssei-theme.scss' | asset_url | stylesheet_tag }}
 {% layout 'gift_card' %}
 
 {%- assign formatted_initial_value = gift_card.initial_value | money_without_trailing_zeros: gift_card.currency -%}
@@ -54,7 +55,7 @@
     </p>
 
     <div id="QrCode" class="giftcard__qr-code" data-identifier="{{ gift_card.qr_identifier }}"></div>
-    
+
     <ul class="giftcard-action-list text-center">
       <li class="giftcard-action-list__item">
         <a href="{{ shop.url }}"
