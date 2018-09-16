@@ -18,7 +18,7 @@
 <footer class="site-footer" role="contentinfo">
   <div class="page-width">
     <div class="grid grid--no-gutters">
-      <div class="grid__item{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist_two != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist_two == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
+      <div class="grid__item{% if section.settings.footer_newsletter_enable %} medium-up--two-twelfths{% else %} text-center{% endif %}">
         {% if linklists[section.settings.footer_linklist].links.size > 0 %}
           <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
             {% for link in linklists[section.settings.footer_linklist].links %}
@@ -30,20 +30,22 @@
         {% endif %}
       </div>
 
-      <div class="grid__item{% if section.settings.footer_newsletter_enable and section.settings.footer_linklist != blank %} medium-up--one-quarter{% elsif section.settings.footer_linklist == blank and section.settings.footer_newsletter_enable %} medium-up--one-half{% else %} text-center{% endif %}">
-        {% if linklists[section.settings.footer_linklist_two].links.size > 0 %}
-          <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
-            {% for link in linklists[section.settings.footer_linklist_two].links %}
-              <li class="site-footer__linklist-item">
-                <a href="{{ link.url }}"{% if link.active %} aria-current="page"{% endif %}>{{ link.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-        {% endif %}
+      <div class="grid__item{% if section.settings.footer_newsletter_enable %} medium-up--five-twelfths{% else %} text-center{% endif %}">
+        <div class="site-footer__copyright medium-up--text-left">
+          <p>
+            For sales & press contact
+            <br/>
+            <a href="mailto:general@odysseiclo.com">general@odysseiclo.com</a>
+          </p>
+          <p>
+            Odyssei clo 2018 @ <br />
+            All rights reserved.
+          </p>
+        </div>
       </div>
 
       {% if section.settings.footer_newsletter_enable %}
-        <div class="grid__item medium-up--one-half">
+        <div class="grid__item medium-up--five-twelfths">
           <div class="site-footer__newsletter">
             {% form 'customer' %}
               {%- if form.errors -%}
@@ -83,6 +85,8 @@
         </div>
       {% endif %}
     </div>
+
+
 
     <div class="grid grid--no-gutters">
       {% if social_icons %}
