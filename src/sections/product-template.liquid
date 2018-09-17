@@ -108,6 +108,10 @@
 
         <h1 class="product-single__title">{{ product.title }}</h1>
 
+        <div class="product-single__description rte">
+          {{ product.description }}
+        </div>
+
           <div class="product__price">
             {% include 'product-price', variant: current_variant %}
           </div>
@@ -167,6 +171,8 @@
           {% endform %}
         </div>
 
+
+
         {%- comment -%}
           Live region for announcing updated price and availability to screen readers
         {%- endcomment -%}
@@ -174,10 +180,6 @@
           aria-live="polite"
           role="status"
         ></p>
-
-        <div class="product-single__description rte">
-          {{ product.description }}
-        </div>
 
         {% if section.settings.show_share_buttons %}
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}

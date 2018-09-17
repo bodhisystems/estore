@@ -1,4 +1,6 @@
-
+.main-content{
+  background: #fff;
+}
 .responsive {
     width: 100%;
     height: auto;
@@ -151,7 +153,9 @@ dl.price dd {
 .price-item {
   color: #e4e0c8;
 }
-
+.template-index .main-content {
+  background: transparent;
+}
 
 .template-index .main-content, .template-index .index-section {
   padding-top: 0;
@@ -177,14 +181,18 @@ dl.price dd {
 .site-nav li {
   position: relative;
 }
-.template-index .site-nav li:first-child a:before, .site-nav--active a:before  {
+.template-index .site-nav li:first-child a:before,
+.template-product .site-nav li:first-child a:before,
+.site-nav--active a:before  {
   content: "|";
   position: absolute;
   top: -25px;
   left: 46%;
 }
 
-.template-index .site-nav li:first-child a:after, .site-nav--active a:after {
+.template-index .site-nav li:first-child a:after,
+.template-product .site-nav li:first-child a:after, 
+.site-nav--active a:after {
   content: "|";
   position: absolute;
   bottom: -20px;
