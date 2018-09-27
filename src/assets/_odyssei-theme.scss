@@ -192,6 +192,24 @@ dl.price dd {
   color: #e4e0c8;
 }
 
+.product-description {
+  position: relative;
+  margin-top: 30px;
+}
+.grid-view-item__title:before {
+  content: "|";
+  position: absolute;
+  top: -30px;
+  left: 49%;
+}
+
+dl.price:after {
+  content: "|";
+  position: absolute;
+  bottom: -25px;
+  left: 49%;
+}
+
 
 /* Homepage Specific Styles */
 .template-index .site-nav li:first-child a:before,
@@ -222,6 +240,9 @@ dl.price dd {
 .template-index .hero__inner {
   vertical-align: bottom;
 }
+.template-index .hero__inner .page-width {
+  position: relative;
+}
 .template-index .hero__inner .mega-title {
   border-top: 5px solid #000;
   color: #000;
@@ -231,11 +252,11 @@ dl.price dd {
 .template-index .hero__inner .mega-title,
 .template-index .hero__inner .mega-subtitle {
   position: absolute;
-  bottom: -180px;
-  left: 232px;
+  bottom: -225px;
+  left: 196px;
 }
 .template-index .hero__inner .mega-subtitle {
-  bottom: -300px;
+  bottom: -340px;
 }
 .template-index .hero__inner .mega-subtitle p{
   color: #000;
@@ -260,13 +281,13 @@ dl.price dd {
     top: -100px;
   }
   .template-index .hero__inner .mega-title{
-    bottom: -150px;
+    bottom: -190px;
     font-size: 1.8em;
-    left: 160px;
+    left: 162px;
   }
   .template-index .hero__inner .mega-subtitle {
-    bottom: -225px;
-    left: 160px;
+    bottom: -260px;
+    left: 162px;
   }
   .template-index .hero__inner .mega-subtitle p{
     font-size: 1.2em;
