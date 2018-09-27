@@ -37,7 +37,6 @@
 
 #Email {
  border: 2px solid white;
- border-right-style:none;
  width: 100%;
  line-height: 10px;
 }
@@ -104,63 +103,15 @@
 }
 
 
-#shopify-section-custom-content {
-  position: absolute;
-  top: 50px;
-  right: 0;
-}
 
-#shopify-section-custom-content .custom__item {
-  width: 110px;
-}
-
-.floating-season {
-  position: relative;
-}
-
-.floating-season + div {
-  position: absolute;
-  height: 170px;
-  position: relative;
-}
-.floating-season + div img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  margin: 0!important;
-  padding: 0!important;
-}
-#shopify-section-logo-bar {
-  position: absolute;
-  top: -160px;
-}
-
-#shopify-section-collection {
-  background: #fff;
-  padding: 100px 0;
-}
-
-dl.price, .grid-view-item__title {
-    text-align: center;
-    display: block;
-    color:  #e4e0c8;
-}
-
-dl.price dd {
+/* Subash Maharjan*/
+/* Site Logo */
+.site-header__logo {
+  height: 70px;
+  border-top: 5px solid #000;
+  max-width: 195px;
   margin: 0;
 }
-
-.price-item {
-  color: #e4e0c8;
-}
-.template-index .main-content {
-  background: transparent;
-}
-
-.template-index .main-content, .template-index .index-section {
-  padding-top: 0;
-}
-
 .site-header__logo-image img {
   min-width: 120px;
   position: absolute;
@@ -181,6 +132,68 @@ dl.price dd {
 .site-nav li {
   position: relative;
 }
+
+
+/* Date vertical logo on right */
+#shopify-section-custom-content {
+  position: absolute;
+  top: 85px;
+  right: 0;
+}
+#shopify-section-custom-content .custom__item {
+  width: 144px;
+}
+
+/* S1 Logo bar */
+.floating-season {
+  position: relative;
+}
+.floating-season + div {
+  position: relative;
+  height: 440px;
+}
+.floating-season + div img {
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  margin: 0!important;
+  padding: 0!important;
+}
+#shopify-section-logo-bar .logo-bar{
+  position: absolute;
+  top: -120px;
+  z-index: 2;
+}
+
+
+/* Clothing items section */
+#shopify-section-collection {
+  background: #fff;
+  padding: 100px 0;
+}
+
+dl.price, .grid-view-item__title {
+    text-align: center;
+    display: block;
+    color:  rgb(228, 224, 200);
+    font-weight: bold;
+}
+.grid-view-item__title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+dl.price {
+  font-size: 22px;
+}
+dl.price dd {
+  margin: 0;
+}
+.price-item {
+  color: #e4e0c8;
+}
+
+
+/* Homepage Specific Styles */
 .template-index .site-nav li:first-child a:before,
 .template-product .site-nav li:first-child a:before,
 .site-nav--active a:before  {
@@ -189,9 +202,8 @@ dl.price dd {
   top: -25px;
   left: 46%;
 }
-
 .template-index .site-nav li:first-child a:after,
-.template-product .site-nav li:first-child a:after, 
+.template-product .site-nav li:first-child a:after,
 .site-nav--active a:after {
   content: "|";
   position: absolute;
@@ -199,5 +211,77 @@ dl.price dd {
   left: 46%;
 }
 
+.template-index .main-content {
+  background: transparent;
+}
+.template-index .main-content,
+.template-index .index-section {
+  padding-top: 0;
+}
+
+.template-index .hero__inner {
+  vertical-align: bottom;
+}
+.template-index .hero__inner .mega-title {
+  border-top: 5px solid #000;
+  color: #000;
+  font-size: 3.6rem;
+  padding: 15px 0;
+}
+.template-index .hero__inner .mega-title,
+.template-index .hero__inner .mega-subtitle {
+  position: absolute;
+  bottom: -180px;
+  left: 232px;
+}
+.template-index .hero__inner .mega-subtitle {
+  bottom: -300px;
+}
+.template-index .hero__inner .mega-subtitle p{
+  color: #000;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  text-align: left;
+}
+
+
 .site-footer__newsletter .h4 { display: none; }
 .site-footer__newsletter , .site-footer__copyright { text-transform: uppercase; }
+
+@media (max-width: 750px) {
+  .site-header__logo {
+    margin-left: 55px;
+  }
+  #shopify-section-custom-content {
+    display: none;
+  }
+  #shopify-section-logo-bar .logo-bar {
+    top: -100px;
+  }
+  .template-index .hero__inner .mega-title{
+    bottom: -150px;
+    font-size: 1.8em;
+    left: 160px;
+  }
+  .template-index .hero__inner .mega-subtitle {
+    bottom: -225px;
+    left: 160px;
+  }
+  .template-index .hero__inner .mega-subtitle p{
+    font-size: 1.2em;
+  }
+
+  .floating-season + div {
+    height: 340px;
+  }
+
+  .floating-season + div img {
+    bottom: 0;
+  }
+}
+
+
+@media (min-width: 751px){
+
+}
