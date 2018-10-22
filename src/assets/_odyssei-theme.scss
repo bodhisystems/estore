@@ -18,7 +18,7 @@
 
 .season-one-footer {
   	font-family: "Helvetica";
-  	font-style: "Bold";
+  	font-weight: 900;
   	font-size: 24pt;
 }
 
@@ -107,8 +107,8 @@
 /* Subash Maharjan*/
 /* Site Logo */
 .site-header__logo {
-  height: 70px;
-  border-top: 5px solid #000;
+  height: 100px;
+  border-top: 10px solid #000;
   max-width: 195px;
   margin: 0;
 }
@@ -122,6 +122,7 @@
   position: absolute;
   bottom: -45px;
   right: 0;
+  font-size: 24px;
 }
 
 .site-nav a {
@@ -213,20 +214,30 @@ dl.price:after {
 
 /* Homepage Specific Styles */
 .template-index .site-nav li:first-child a:before,
+.template-index .site-nav li:first-child a:after,
 .template-product .site-nav li:first-child a:before,
-.site-nav--active a:before  {
+.template-product .site-nav li:first-child a:after,
+.template-collection .site-nav li:first-child a:before,
+.template-collection .site-nav li:first-child a:after,
+.site-nav--active a:before, .site-nav--active a:after  {
   content: "|";
   position: absolute;
-  top: -25px;
   left: 46%;
+  height: 18px;
+  font-weight: 900;
+  overflow: hidden;
+}
+.template-index .site-nav li:first-child a:before,
+.template-product .site-nav li:first-child a:before,
+.template-collection .site-nav li:first-child a:before,
+.site-nav--active a:before  {
+  top: -15px;
 }
 .template-index .site-nav li:first-child a:after,
 .template-product .site-nav li:first-child a:after,
+.template-collection .site-nav li:first-child a:after,
 .site-nav--active a:after {
-  content: "|";
-  position: absolute;
-  bottom: -20px;
-  left: 46%;
+    bottom: -5px;
 }
 
 .template-index .main-content {

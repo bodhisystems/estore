@@ -40,6 +40,21 @@
       {% if section.settings.text != blank %}
         <div class="rte rte-setting featured-row__subtext">{{ section.settings.text }}</div>
       {% endif %}
+      {% if section.settings.title2 != blank %}
+        <h2 class="h3">{{ section.settings.title2 | escape }}</h2>
+      {% endif %}
+      {% if section.settings.text2 != blank %}
+        <div class="rte rte-setting featured-row__subtext">{{ section.settings.text2 }}</div>
+      {% endif %}
+      {% if section.settings.title3 != blank %}
+        <h2 class="h3">{{ section.settings.title3 | escape }}</h2>
+      {% endif %}
+      {% if section.settings.text3 != blank %}
+        <div class="rte rte-setting featured-row__subtext">{{ section.settings.text3 }}</div>
+      {% endif %}
+      {% if section.settings.addressText != blank %}
+        <div class="rte rte-setting featured-row__subtext">{{ section.settings.addressText }}</div>
+      {% endif %}
       {% if section.settings.button_label != blank and section.settings.button_link != blank %}
         <a href="{{ section.settings.button_link }}" class="btn">
           {{ section.settings.button_label | escape }}
@@ -116,6 +131,76 @@
       {
         "type": "richtext",
         "id": "text",
+        "label": {
+          "en": "Text",
+          "de": "Text",
+          "fr": "Texte"
+        },
+        "default": {
+          "en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "de": "<p>Kombinieren Sie große Schrift mit einem Foto, um einen Fokus auf Ihr ausgewähltes Produkt, die Kategorie oder einen Blogpost zu legen. Dazu Details zur Verfügbarkeit, Stil oder ein Review.</p>",
+          "fr": "<p>Ajoutez une image à un long texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.</p>"
+        }
+      },
+      {
+        "type": "text",
+        "id": "title2",
+        "label": {
+          "en": "Heading",
+          "de": "Titel",
+          "fr": "En-tête"
+        },
+        "default": {
+          "en": "Image with text",
+          "de": "Foto mit Text",
+          "fr": "Image avec du texte"
+        }
+      },
+      {
+        "type": "richtext",
+        "id": "text2",
+        "label": {
+          "en": "Text",
+          "de": "Text",
+          "fr": "Texte"
+        },
+        "default": {
+          "en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "de": "<p>Kombinieren Sie große Schrift mit einem Foto, um einen Fokus auf Ihr ausgewähltes Produkt, die Kategorie oder einen Blogpost zu legen. Dazu Details zur Verfügbarkeit, Stil oder ein Review.</p>",
+          "fr": "<p>Ajoutez une image à un long texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.</p>"
+        }
+      },
+      {
+        "type": "text",
+        "id": "title3",
+        "label": {
+          "en": "Heading",
+          "de": "Titel",
+          "fr": "En-tête"
+        },
+        "default": {
+          "en": "Image with text",
+          "de": "Foto mit Text",
+          "fr": "Image avec du texte"
+        }
+      },
+      {
+        "type": "richtext",
+        "id": "text3",
+        "label": {
+          "en": "Text",
+          "de": "Text",
+          "fr": "Texte"
+        },
+        "default": {
+          "en": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "de": "<p>Kombinieren Sie große Schrift mit einem Foto, um einen Fokus auf Ihr ausgewähltes Produkt, die Kategorie oder einen Blogpost zu legen. Dazu Details zur Verfügbarkeit, Stil oder ein Review.</p>",
+          "fr": "<p>Ajoutez une image à un long texte pour mettre l'accent sur un produit de votre choix, une collection, ou un article de blog. Ajoutez des détails sur la disponibilité, le style, ou mettez un commentaire client en avant.</p>"
+        }
+      },
+      {
+        "type": "richtext",
+        "id": "addressText",
         "label": {
           "en": "Text",
           "de": "Text",
