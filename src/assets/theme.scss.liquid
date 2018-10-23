@@ -2839,6 +2839,7 @@ hr {
   color: $color-text;
   font-size: em($font-size-base + 2px);
   min-width: 100px;
+  text-transform: uppercase;
 
   @if $font-bold-titles {
     font-weight: $font-weight-header--bold;
@@ -3561,11 +3562,11 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 .cart__meta-text {
   padding: 5px 0;
   font-size: em($font-size-base - 2);
-  font-style: italic;
+  text-transform: uppercase;
 }
 
 .cart__qty-label {
-  @include visually-hidden();
+  position: absolute !important;
 }
 
 .cart__qty-input {
@@ -3615,14 +3616,13 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 .cart__subtotal-title {
   font-size: em($font-size-base + 2px);
+  padding-left: $gutter-site / 2;
 }
 
 .cart__subtotal {
-  padding-left: $gutter-site / 2;
+  padding-left: 10px;
 
   @include media-query($medium-up) {
-    padding-left: $gutter-site;
-    min-width: 150px;
     display: inline-block;
   }
 }
@@ -3642,7 +3642,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 
 .cart__footer {
-  padding-top: $section-spacing-small;
+  padding-bottom: $section-spacing-small;
 }
 
 .cart__update--large {
@@ -3764,7 +3764,6 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     min-width: 0;
     @include flex(1 1 100%);
   }
-
   .cart__meta {
     @include flex(1 1 0%);
   }

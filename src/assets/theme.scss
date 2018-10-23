@@ -3643,7 +3643,6 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
   @include media-query($medium-up) {
     padding-left: $gutter-site;
-    min-width: 150px;
     display: inline-block;
   }
 }
