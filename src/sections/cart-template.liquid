@@ -12,7 +12,7 @@
           {% for item in cart.items %}
             <tr class="cart__row border-bottom line{{ forloop.index }} cart-flex{% if forloop.first %} border-top{% endif %}">
               <td class="cart__remove-wrapper">
-                <p class="small--hide">
+                <p>
                   <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="btn btn--small btn--secondary cart__remove">X</a>
                 </p>
               </td>
@@ -30,6 +30,7 @@
                     {% endif %}
                   </a>
                 </div>
+                
                 {% unless item.variant.title contains 'Default' %}
                   <div class="cart__meta-text">
                     {% for option in item.product.options %}
@@ -66,7 +67,23 @@
                     {% endfor %}
                   </div>
                 {% endif %}
+                <div class="cart__qty medium-up--hide">
+                  <label for="updates_{{ item.key }}" class="cart__qty-label">{{ 'cart.label.quantity' | t }}</label>
+                  <input class="cart__qty-input" type="number" name="updates[]" id="updates_{{ item.key }}" value="{{ item.quantity }}" min="0" pattern="[0-9]*">
+                </div>
+                <div class="medium-up--hide">
+                  {% if item.original_line_price != item.line_price %}
+                    <div class="cart-item__original-price"><s>{{ item.original_line_price | money }}</s></div>
+                  {% endif %}
 
+                  <div>
+                    {{ item.line_price | money }}
+                  </div>
+
+                  {% for discount in item.discounts %}
+                    <div class="cart-item__discount">{{ discount.title }}</div>
+                  {% endfor %}
+                </div>
                 <p class="small--hide">
                   <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0" class="cart__remove-text">{{ 'cart.general.remove' | t }}</a>
                 </p>

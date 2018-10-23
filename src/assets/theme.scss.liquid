@@ -3617,6 +3617,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 .cart__subtotal-title {
   font-size: em($font-size-base + 2px);
   padding-left: $gutter-site / 2;
+  text-transform: uppercase;
 }
 
 .cart__subtotal {
@@ -3697,7 +3698,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 @include media-query($medium-up) {
   .cart__image-wrapper {
-    width: 130px;
+    width: 200px;
   }
 
   .cart__meta {
@@ -3769,7 +3770,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   }
 
   .cart__image-wrapper {
-    @include flex(0 0 85px);
+    @include flex(0 0 200px);
   }
 
   .cart__price-wrapper {
@@ -3785,16 +3786,13 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     padding-top: 20px;
   }
 
-  .cart__qty {
-    padding: 0 10px;
-  }
-
   .cart__qty-label {
     @include visually-shown();
     display: inline-block;
     vertical-align: middle;
     font-size: em(13);
     margin-right: 5px;
+    text-transform: uppercase;
   }
 }
 
@@ -5305,8 +5303,7 @@ $toolbar-height-small: 46px;
 }
 
 .site-footer__newsletter {
-  margin: $section-spacing-small auto 0;
-  max-width: 320px;
+  
 
   @include media-query($medium-up) {
     margin: $section-spacing 0 0;

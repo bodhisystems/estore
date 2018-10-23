@@ -283,7 +283,7 @@ dl.price:after {
 
 @media (max-width: 750px) {
   .site-header__logo {
-    margin-left: 55px;
+    margin-left: 22px;
   }
   #shopify-section-custom-content {
     display: none;
@@ -311,12 +311,14 @@ dl.price:after {
   .floating-season + div img {
     bottom: 0;
   }
+
+  .site-footer__newsletter {
+    margin-left: 10px;
+  }
 }
 
 
-@media (min-width: 751px){
 
-}
 
 
 /* CART */
@@ -359,9 +361,7 @@ dl.price:after {
   max-height: 200px;
 }
 
-.cart__qty-label {
-  padding-top: 8px;
-}
+
 
 .cart__qty-input {
   border: 1px solid rgba(255, 255, 255, 0.85);
@@ -377,4 +377,16 @@ dl.price:after {
   border: 1px solid #111;
   background: #fff;
   color: #111;
+}
+
+@media (max-width: 750px){
+  .site-footer__linklist-item {
+    display: block;
+  }
+}
+
+@media (min-width: 751px){
+  .cart__qty-label {
+    padding-top: 8px;
+  }
 }
