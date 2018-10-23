@@ -18,7 +18,7 @@
 
 .season-one-footer {
   	font-family: "Helvetica";
-  	font-style: "Bold";
+  	font-weight: 900;
   	font-size: 24pt;
 }
 
@@ -107,8 +107,8 @@
 /* Subash Maharjan*/
 /* Site Logo */
 .site-header__logo {
-  height: 70px;
-  border-top: 5px solid #000;
+  height: 100px;
+  border-top: 10px solid #000;
   max-width: 195px;
   margin: 0;
 }
@@ -122,6 +122,7 @@
   position: absolute;
   bottom: -45px;
   right: 0;
+  font-size: 24px;
 }
 
 .site-nav a {
@@ -213,20 +214,30 @@ dl.price:after {
 
 /* Homepage Specific Styles */
 .template-index .site-nav li:first-child a:before,
+.template-index .site-nav li:first-child a:after,
 .template-product .site-nav li:first-child a:before,
-.site-nav--active a:before  {
+.template-product .site-nav li:first-child a:after,
+.template-collection .site-nav li:first-child a:before,
+.template-collection .site-nav li:first-child a:after,
+.site-nav--active a:before, .site-nav--active a:after  {
   content: "|";
   position: absolute;
-  top: -25px;
   left: 46%;
+  height: 18px;
+  font-weight: 900;
+  overflow: hidden;
+}
+.template-index .site-nav li:first-child a:before,
+.template-product .site-nav li:first-child a:before,
+.template-collection .site-nav li:first-child a:before,
+.site-nav--active a:before  {
+  top: -15px;
 }
 .template-index .site-nav li:first-child a:after,
 .template-product .site-nav li:first-child a:after,
+.template-collection .site-nav li:first-child a:after,
 .site-nav--active a:after {
-  content: "|";
-  position: absolute;
-  bottom: -20px;
-  left: 46%;
+    bottom: -5px;
 }
 
 .template-index .main-content {
@@ -272,7 +283,7 @@ dl.price:after {
 
 @media (max-width: 750px) {
   .site-header__logo {
-    margin-left: 55px;
+    margin-left: 22px;
   }
   #shopify-section-custom-content {
     display: none;
@@ -300,9 +311,82 @@ dl.price:after {
   .floating-season + div img {
     bottom: 0;
   }
+
+  .site-footer__newsletter {
+    margin-left: 10px;
+  }
 }
 
 
-@media (min-width: 751px){
 
+
+
+/* CART */
+
+#shopify-section-cart-template .section-header {
+  color: #ccc;
+  border-bottom: 5px solid #ccc;
+  margin-top: 100px;
+}
+
+.cart table {
+  border-bottom: 5px solid #ccc;
+}
+.cart__remove {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.cart__remove-text {
+  margin-top: 30px;
+  display: block;
+  font-weight: 300;
+}
+
+.cart__remove-text,
+.cart__remove-text:hover,
+.cart__remove-text:focus,
+.cart__remove-text:visited {
+  color: #ccc;
+}
+
+.cart__remove-wrapper {
+  width: 50px;
+}
+.cart__image-wrapper {
+  width: 200px;
+}
+
+.cart__image-wrapper .cart__image {
+  max-height: 200px;
+}
+
+
+
+.cart__qty-input {
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background-color: #fff;
+  color: #000;
+}
+
+.cart__qty-input:focus {
+  border: none;
+}
+
+.cart__checkout-button {
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+}
+
+@media (max-width: 750px){
+  .site-footer__linklist-item {
+    display: block;
+  }
+}
+
+@media (min-width: 751px){
+  .cart__qty-label {
+    padding-top: 8px;
+  }
 }
