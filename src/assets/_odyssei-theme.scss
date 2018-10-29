@@ -34,9 +34,17 @@
  font-weight: 900;
  font-family: "Helvetica";
 }
+.site-footer__newsletter .input-group {
+  border: 2px solid #fff;
+  
+}
+
+.site-footer__newsletter .input-group__field {
+  margin-bottom: 0;
+}
 
 #Email {
- border: 2px solid white;
+ border: none;
  width: 100%;
  line-height: 10px;
 }

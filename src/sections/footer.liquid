@@ -18,7 +18,7 @@
 <footer class="site-footer" role="contentinfo">
   <div class="page-width">
     <div class="grid grid--no-gutters">
-      <div class="grid__item{% if section.settings.footer_newsletter_enable %} small--four-twelfths medium-up--two-twelfths{% else %} text-center{% endif %}">
+      <div class="grid__item{% if section.settings.footer_newsletter_enable %} small--one-third medium-up--two-twelfths{% else %} text-center{% endif %}">
         {% if linklists[section.settings.footer_linklist].links.size > 0 %}
           <ul class="site-footer__linklist{% unless section.settings.footer_newsletter_enable %} site-footer__linklist--center{% endunless %}">
             {% for link in linklists[section.settings.footer_linklist].links %}
@@ -30,7 +30,7 @@
         {% endif %}
       </div>
 
-      <div class="grid__item{% if section.settings.footer_newsletter_enable %} small--eight-twelfths medium-up--five-twelfths{% else %} text-center{% endif %}">
+      <div class="grid__item{% if section.settings.footer_newsletter_enable %} small--two-thirds medium-up--five-twelfths{% else %} text-center{% endif %}">
         <div class="site-footer__copyright medium-up--text-left">
           <p>
             For sales & press contact
