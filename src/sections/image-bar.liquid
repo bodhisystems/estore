@@ -7,7 +7,7 @@
     {% when 3 %}
       {%- assign column_size = 'medium-up--one-third' -%}
     {% else %}
-      {%- assign column_size = 'medium-up--one-quarter' -%}
+      {%- assign column_size = 'small--one-half medium-up--one-quarter' -%}
   {% endcase %}
 
   {% for block in section.blocks %}
