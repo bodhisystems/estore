@@ -390,6 +390,9 @@ dl.price:after {
 @media (max-width: 750px){
   .site-footer__linklist-item {
     display: block;
+  } 
+  .feature-row__image-wrapper {
+    display: none;
   }
 }
 
