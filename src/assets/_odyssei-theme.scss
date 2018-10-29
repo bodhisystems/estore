@@ -181,7 +181,8 @@
   padding: 100px 0;
 }
 
-dl.price, .grid-view-item__title {
+#shopify-section-collection dl.price, 
+#shopify-section-collection .grid-view-item__title {
     text-align: center;
     display: block;
     color:  rgb(228, 224, 200);
