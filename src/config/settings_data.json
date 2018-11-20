@@ -166,6 +166,22 @@
                     "show_share_buttons": false
                 }
             },
+            "faq-template": {
+                "type": "faq-template",
+                "settings": {
+                    "image": "shopify://shop_images/35970865_10155657436078424_8083460413389275136_n.jpg",
+                    "layout": "left",
+                    "title": "DELIVERY",
+                    "text": "<p>Please allow 10 business days for delivery.&nbsp;<br>if you do not receive a tracking number or your package within 10 days please <strong>email</strong> our team.</p>",
+                    "title2": "STAY UP TO DATE",
+                    "text2": "<p>To stay updated on the latest from Odyssei follow us on IG @&nbsp;<strong>odysseiclo</strong></p>",
+                    "title3": "RETURNS & EXCHANGES",
+                    "text3": "<p>Given the limited nature of each Season run, we do not accept returns.</p>\n<p>If your order is damaged, you can exchange it up to 14 days after receiving it.</p>\n<p>Shipping fees are non-refundable.</p>\n<p>Re-shipment costs are covered by Odyssei.</p>",
+                    "addressText": "<p><strong>Address return to:</strong></p>\n<p><strong>Odyssei Clothing</strong><br>423 Quarry Road<br>Charlottesville, VA<br>22902<br>United States of America</p>",
+                    "button_label": "",
+                    "button_link": ""
+                }
+            },
             "collection-template": {
                 "type": "collection-template",
                 "settings": {
@@ -539,6 +555,22 @@
                         "show_vendor": false,
                         "enable_zoom": true,
                         "show_share_buttons": true
+                    }
+                },
+                "faq-template": {
+                    "type": "faq-template",
+                    "settings": {
+                        "image": "shopify://shop_images/35970865_10155657436078424_8083460413389275136_n.jpg",
+                        "layout": "left",
+                        "title": "DELIVERY",
+                        "text": "<p>Please allow 10 business days for delivery.&nbsp;<br>if you do not receive a tracking number or your package within 10 days please <strong>email</strong> our team.</p>",
+                        "title2": "STAY UP TO DATE",
+                        "text2": "<p>To stay updated on the latest from Odyssei follow us on IG @&nbsp;<strong>odysseiclo</strong></p>",
+                        "title3": "RETURNS & EXCHANGES",
+                        "text3": "<p>Given the limited nature of each Season run, we do not accept returns.</p>\n<p>If your order is damaged, you can exchange it up to 14 days after receiving it.</p>\n<p>Shipping fees are non-refundable.</p>\n<p>Re-shipment costs are covered by Odyssei.</p>",
+                        "addressText": "<p><strong>Address return to:</strong></p>\n<p><strong>Odyssei Clothing</strong><br>423 Quarry Road<br>Charlottesville, VA<br>22902<br>United States of America</p>",
+                        "button_label": "",
+                        "button_link": ""
                     }
                 },
                 "collection-template": {

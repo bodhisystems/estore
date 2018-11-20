@@ -181,12 +181,17 @@
   padding: 100px 0;
 }
 
-#shopify-section-collection dl.price, 
-#shopify-section-collection .grid-view-item__title {
-    text-align: center;
+dl.price, 
+.grid-view-item__title {
+    text-align: left;
     display: block;
     color:  rgb(228, 224, 200);
     font-weight: bold;
+}
+
+#shopify-section-collection dl.price, 
+#shopify-section-collection .grid-view-item__title {
+  text-align: center!important;
 }
 .grid-view-item__title {
   font-size: 24px;
@@ -206,6 +211,26 @@ dl.price dd {
   position: relative;
   margin: 30px 0;
 }
+
+.product-form__item {
+  flex: 1 1 100px;
+  padding: 0;
+  max-width: 140px;
+}
+
+.single-option-selector {
+  text-transform: uppercase;
+  color: #111;
+}
+
+.product-form__item .single-option-selector {
+  border-right: 0;
+}
+
+.product-form__item--submit .btn.product-form__cart-submit {
+  border: 1px solid #111;
+}
+
 .grid-view-item__title:before {
   content: "|";
   position: absolute;
@@ -284,6 +309,11 @@ dl.price:after {
   text-transform: uppercase;
   font-size: 2.6rem;
   text-align: left;
+}
+
+/* FAQ Page Specific Styles*/
+.faq-page {
+  margin-top: -55px;
 }
 
 

@@ -3257,6 +3257,7 @@ $(document).ready(function() {
   var sections = new theme.Sections();
 
   sections.register('cart-template', theme.Cart);
+  sections.register('faq-template', theme.Faq);
   sections.register('product', theme.Product);
   sections.register('collection-template', theme.Filters);
   sections.register('product-template', theme.Product);
