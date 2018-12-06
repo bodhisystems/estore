@@ -182,6 +182,15 @@
                     "button_link": ""
                 }
             },
+            "about-template": {
+                "type": "about-template",
+                "settings": {
+                    "image": "shopify://shop_images/35970865_10155657436078424_8083460413389275136_n.jpg",
+                    "layout": "left",
+                    "button_label": "",
+                    "button_link": ""
+                }
+            },
             "collection-template": {
                 "type": "collection-template",
                 "settings": {
@@ -569,6 +578,15 @@
                         "title3": "RETURNS & EXCHANGES",
                         "text3": "<p>Given the limited nature of each Season run, we do not accept returns.</p>\n<p>If your order is damaged, you can exchange it up to 14 days after receiving it.</p>\n<p>Shipping fees are non-refundable.</p>\n<p>Re-shipment costs are covered by Odyssei.</p>",
                         "addressText": "<p><strong>Address return to:</strong></p>\n<p><strong>Odyssei Clothing</strong><br>423 Quarry Road<br>Charlottesville, VA<br>22902<br>United States of America</p>",
+                        "button_label": "",
+                        "button_link": ""
+                    }
+                },
+                "about-template": {
+                    "type": "about-template",
+                    "settings": {
+                        "image": "shopify://shop_images/35970865_10155657436078424_8083460413389275136_n.jpg",
+                        "layout": "left",
                         "button_label": "",
                         "button_link": ""
                     }

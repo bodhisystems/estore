@@ -3258,6 +3258,7 @@ $(document).ready(function() {
 
   sections.register('cart-template', theme.Cart);
   sections.register('faq-template', theme.Faq);
+  sections.register('about-template', theme.about);
   sections.register('product', theme.Product);
   sections.register('collection-template', theme.Filters);
   sections.register('product-template', theme.Product);
