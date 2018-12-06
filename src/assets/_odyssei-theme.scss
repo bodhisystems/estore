@@ -441,18 +441,23 @@ dl.price:after {
     padding-top: 8px;
   }
 
-  #FeatureRowImageWrapper-feature-row, #FeatureRowImage-feature-row  {
+  #FeatureRowImageWrapper-faq-template, 
+  #FeatureRowImage-faq-template,
+  #FeatureRowImageWrapper-about-template, 
+  #FeatureRowImage-about-template  {
     max-width: 100%!important;
     max-height: 100%!important;
   }
 
-  #FeatureRowImage-feature-row {
+  #FeatureRowImage-faq-template,
+  #FeatureRowImage-about-template {
     position: relative;
     top: 0;
     margin-top: -26px;
   }
 
-  #FeatureRowImageWrapper-feature-row > div {
+  #FeatureRowImageWrapper-faq-template > div,
+  #FeatureRowImageWrapper-about-template > div {
     padding: 0!important;
   }
 }

@@ -7,14 +7,16 @@
         {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
         {% include 'image-style' with image: section.settings.image, width: 545, height: 545, small_style: true, wrapper_id: wrapper_id, img_id: img_id %}
         <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
-          <img id="{{ img_id }}"
-                 class="feature-row__image lazyload"
-                 src="{{ section.settings.image | img_url: '200x200' }}"
-                 data-src="{{ img_url }}"
-                 data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-                 data-aspectratio="{{ section.settings.image.aspect_ratio }}"
-                 data-sizes="auto"
-                 alt="{{ section.settings.image.alt | escape }}">
+          <div style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100}}%;">
+            <img id="{{ img_id }}"
+                class="feature-row__image lazyload"
+                src="{{ section.settings.image | img_url: '200x200' }}"
+                data-src="{{ img_url }}"
+                data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+                data-aspectratio="{{ section.settings.image.aspect_ratio }}"
+                data-sizes="auto"
+                alt="{{ section.settings.image.alt | escape }}">
+          </div>
         </div>
 
         <noscript>
@@ -26,12 +28,12 @@
     </div>
   {% endcapture %}
 
-  <div class="feature-row__item">
-    {% if section.settings.layout == 'left' %}
-      {{ image_layout }}
-    {% endif %}
+  {% if section.settings.layout == 'left' %}
+    {{ image_layout }}
+  {% endif %}
 
-    <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
+  <div class="feature-row__item feature-row__text feature-row__text--{{ section.settings.layout }}">
+    <div class="feature-row__item-content">
       {% if section.settings.title != blank %}
         <h2 class="h3">{{ section.settings.title | escape }}</h2>
       {% endif %}
@@ -59,13 +61,15 @@
         </a>
       {% endif %}
     </div>
-
-    {% if section.settings.layout == 'right' %}
-      {{ image_layout }}
-    {% endif %}
   </div>
-</div>
 
+  {% if section.settings.layout == 'right' %}
+    {{ image_layout }}
+  {% endif %}
+  
+
+
+</div>
 
 {% schema %}
   {
