@@ -159,7 +159,7 @@
 }
 .floating-season + div {
   position: relative;
-  height: 260px;
+  height: 440px;
 }
 .floating-season + div img {
   position: absolute;
@@ -321,49 +321,8 @@ dl.price:after {
   margin-top: -55px;
 }
 
-
 .site-footer__newsletter .h4 { display: none; }
 .site-footer__newsletter , .site-footer__copyright { text-transform: uppercase; }
-
-@media only screen and (max-width: 750px) {
-  .site-header__logo {
-    margin-left: 22px;
-  }
-  #shopify-section-custom-content {
-    display: none;
-  }
-  #shopify-section-logo-bar .logo-bar {
-    top: -100px;
-  }
-  .template-index .hero__inner .mega-title{
-    bottom: -190px;
-    font-size: 1.8rem;
-    left: 162px;
-  }
-  .template-index .hero__inner .mega-subtitle {
-    bottom: -260px;
-    left: 162px;
-  }
-  .template-index .hero__inner .mega-subtitle p{
-    font-size: 1.2rem;
-  }
-
-  .floating-season + div {
-    height: 340px;
-  }
-
-  .floating-season + div img {
-    bottom: 0;
-  }
-
-  .site-footer__newsletter {
-    margin-left: 10px;
-  }
-}
-
-
-
-
 
 /* CART */
 
@@ -405,8 +364,6 @@ dl.price:after {
   max-height: 200px;
 }
 
-
-
 .cart__qty-input {
   border: 1px solid rgba(255, 255, 255, 0.85);
   background-color: #fff;
@@ -443,7 +400,10 @@ input, textarea, select,
   .image-bar {
     max-width: 100%;
   }
-
+  .floating-season + div {
+    position: relative;
+    height: 260px;
+  }
   .faq-page, .about-page {
     padding: 0 22px;
   }
@@ -453,6 +413,40 @@ input, textarea, select,
   } 
   .feature-row__image-wrapper {
     display: none;
+  }
+
+  .site-header__logo {
+    margin-left: 22px;
+  }
+  #shopify-section-custom-content {
+    display: none;
+  }
+  #shopify-section-logo-bar .logo-bar {
+    top: -100px;
+  }
+  .template-index .hero__inner .mega-title{
+    bottom: -190px;
+    font-size: 1.8rem;
+    left: 162px;
+  }
+  .template-index .hero__inner .mega-subtitle {
+    bottom: -260px;
+    left: 162px;
+  }
+  .template-index .hero__inner .mega-subtitle p{
+    font-size: 1.2rem;
+  }
+
+  .floating-season + div {
+    height: 340px;
+  }
+
+  .floating-season + div img {
+    bottom: 0;
+  }
+
+  .site-footer__newsletter {
+    margin-left: 10px;
   }
 
   .mobile-nav {
@@ -544,13 +538,13 @@ input, textarea, select,
   #FeatureRowImageWrapper-about-template > div {
     padding: 0!important;
   }
-  .floating-season + div img {
-    padding: 0 0 0 490px!important;
-  }
 }
 
 @media (min-width: 991px){
   .feature-row__item-content {
     width: 50%;
+  }
+  .floating-season + div img {
+    padding: 0 0 0 490px!important;
   }
 }
