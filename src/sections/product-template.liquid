@@ -185,18 +185,26 @@
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}
         {% endif %}
       </div>
+      <div style="text-align: right;">
+        <img alt="Odyssei Clothing LLC" src="//cdn.shopify.com/s/files/1/0119/8302/8281/files/Odyssei_graphicoverlay_shop_graphic.png?12919236742546850835" />
+      </div>
     </div>
   </div>
 </div>
 
-{% if collection %}
+<div style="text-align: center;margin-top: 200px;">
+    <img alt="Odyssei Clothing LLC" src="//cdn.shopify.com/s/files/1/0119/8302/8281/files/Odyssei_Shop_SeasonOne_graphic.png?7414313629981458472" 
+    style="display: block; float: none; padding:0 5%; margin: 10% auto;" />
+</div>
+
+{% comment %} {% if collection %}
   <div class="text-center return-link-wrapper">
     <a href="{{ collection.url }}" class="btn btn--secondary btn--has-icon-before return-link">
       {% include 'icon-arrow-left' %}
       {{ 'products.product.back_to_collection' | t: title: collection.title }}
     </a>
   </div>
-{% endif %}
+{% endif %} {% endcomment %}
 
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">
