@@ -32,22 +32,22 @@ $grid-breakpoint-has-push: ($small, $medium-up);
 $color-text: #000000;
 $color-text-shadow: rgba(0,0,0,0.4);
 $color-body-text: #000000;
-$color-sale-text: #e4e0c8;
-$color-small-button: #fff;
+$color-sale-text: #e4dbce;
+$color-small-button: #ffffff;
 $color-small-button-text: #3d4246;
-$color-text-field: #e4e0c8;
+$color-text-field: #e4dbce;
 $color-text-field-text: #ffffff;
 $color-navigation-text: #000000;
 
 // Button colors
-$color-btn-primary: #e4e0c8;
+$color-btn-primary: #e4dbce;
 $color-btn-primary-text: #000000;
 
 // Hover and focus states
 $color-text-focus: adaptiveColor(#000000, 0.0);
 $color-overlay-text-focus: adaptiveColor(#fff, 255.0);
-$color-btn-primary-focus: adaptiveColor(#e4e0c8, 222.46);
-$color-small-button-focus: adaptiveColor(#fff, 255.0);
+$color-btn-primary-focus: adaptiveColor(#e4dbce, 220.21);
+$color-small-button-focus: adaptiveColor(#ffffff, 255.0);
 
 // Link buttons and secondary cta
 $color-link: $color-body-text;
@@ -55,20 +55,20 @@ $opacity-link-hover: 0.6;
 $transition-link-hover: 0.1s cubic-bezier(0.44, 0.13, 0.48, 0.87);
 
 // Backgrounds
-$color-body: #e4e0c8;
-$color-bg: #e4e0c8;
+$color-body: #e4dbce;
+$color-bg: #e4dbce;
 $color-drawer-background: rgba(0, 0, 0, 0.6);
 $color-bg-alt: rgba(0, 0, 0, 0.05);
 
 // Overlays
 $color-overlay-title-text: #fff;
 $color-image-overlay: #3d4246;
-$opacity-image-overlay: 0.31;;
+$opacity-image-overlay: 0.0;;
 
 
   ;
 
-$hover-overlay-opacity: 0.71;
+$hover-overlay-opacity: 0.4;
 
 // Border colors
 $color-border: #ffffff;
@@ -113,7 +113,7 @@ $z-index-announcement-bar: 10;
 $z-index-skip-to-content: 10000; // really high to be safe of app markup
 
 /*================ SVG ================*/
-$svg-select-icon: #{'//cdn.shopify.com/s/files/1/0119/8302/8281/t/1/assets/ico-select.svg?1793046665020477944'};
+$svg-select-icon: #{'//cdn.shopify.com/s/files/1/0119/8302/8281/t/1/assets/ico-select.svg?6730398668307062396'};
 
 /*================ Drawers ================*/
 $transition-drawer: all 0.45s cubic-bezier(0.29, 0.63, 0.44, 1);
