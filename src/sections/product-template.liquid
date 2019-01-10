@@ -106,11 +106,12 @@
     <div class="grid__item {{ product_description_width }}">
       <div class="product-single__meta">
 
-        <h1 class="product-single__title">{{ product.title }}</h1>
+        <div class="meta-wrapper">
+          <h1 class="product-single__title">{{ product.title }}</h1>
 
-        <div class="product-single__description rte">
-          {{ product.description }}
-        </div>
+          <div class="product-single__description rte">
+            {{ product.description }}
+          </div>
 
           <div class="product__price">
             {% include 'product-price', variant: current_variant %}
@@ -124,9 +125,9 @@
             {% unless product.has_only_default_variant %}
               {% for option in product.options_with_values %}
                 <div class="selector-wrapper js product-form__item">
-                  <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
+                  {% comment %} <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
                     {{ option.name }}
-                  </label>
+                  </label> {% endcomment %}
                   <select class="single-option-selector single-option-selector-{{ section.id }} product-form__input" id="SingleOptionSelector-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
                     {% for value in option.values %}
                       <option value="{{ value | escape }}"{% if option.selected_value == value %} selected="selected"{% endif %}>{{ value }}</option>
@@ -171,8 +172,10 @@
           {% endform %}
         </div>
 
-
-
+        <div class="plus-image-teaser">
+          <img alt="Odyssei Clothing LLC" src="//cdn.shopify.com/s/files/1/0119/8302/8281/files/Odyssei_graphicoverlay_shop_graphic.png?12919236742546850835" />
+        </div>
+      </div>
         {%- comment -%}
           Live region for announcing updated price and availability to screen readers
         {%- endcomment -%}
@@ -186,17 +189,26 @@
         {% endif %}
       </div>
     </div>
+
+    
   </div>
 </div>
 
-{% if collection %}
+
+
+<div class="season-one-image-teaser">
+    <img alt="Odyssei Clothing LLC" src="//cdn.shopify.com/s/files/1/0119/8302/8281/files/Odyssei_Shop_SeasonOne_graphic.png?7414313629981458472" 
+    style="" />
+</div>
+
+{% comment %} {% if collection %}
   <div class="text-center return-link-wrapper">
     <a href="{{ collection.url }}" class="btn btn--secondary btn--has-icon-before return-link">
       {% include 'icon-arrow-left' %}
       {{ 'products.product.back_to_collection' | t: title: collection.title }}
     </a>
   </div>
-{% endif %}
+{% endif %} {% endcomment %}
 
 {% unless product == empty %}
   <script type="application/json" id="ProductJson-{{ section.id }}">

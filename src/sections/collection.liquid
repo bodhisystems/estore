@@ -13,13 +13,13 @@
       {%- assign grid_item_width = 'medium-up--one-half' -%}
     {% when 3 %}
       {%- assign max_height = 345 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
+      {%- assign grid_item_width = 'small--one-whole medium-up--one-third' -%}
     {% when 4 %}
       {%- assign max_height = 250 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
+      {%- assign grid_item_width = 'small--one-whole medium-up--one-quarter' -%}
     {% when 5 %}
       {%- assign max_height = 195 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
+      {%- assign grid_item_width = 'small--one-whole medium-up--one-fifth' -%}
   {% endcase %}
 
   {%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
@@ -51,14 +51,20 @@
     {% endfor %}
   </ul>
 
-  {% if section.settings.show_view_all %}
+  {% comment %} {% if section.settings.show_view_all %}
     <hr class="hr--invisible" aria-hidden="true" />
     <div class="text-center">
       <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
         {{ 'collections.general.view_all' | t }}
       </a>
     </div>
-  {% endif %}
+  {% endif %} {% endcomment %}
+
+  <div class="text-center show-mobile-only">
+    <a href="{{ collection.url }}" class="btn" aria-label="{{ 'collections.general.view_all_label' | t: collection_name: collection.title }}">
+      {{ 'collections.general.view_all' | t }}
+    </a>
+  </div>
 
 </div>
 
